@@ -9,6 +9,15 @@ package ProjectDesignPattern;
  *
  * @author edson
  */
-public class CriticalState {
-    
+public class CriticalState implements State {
+
+    @Override
+    public void atacar(float velocidadeAtaque) {
+        System.out.println("Atacando na velocidade " + (velocidadeAtaque - 0.4));
+    }
+
+    @Override
+    public void mover(float velocidadeMovimento) {
+        System.out.println("Movendo na velocidade "+ (velocidadeMovimento - 10));
+    } 
 }

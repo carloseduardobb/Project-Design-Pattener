@@ -11,11 +11,13 @@ package ProjectDesignPattern;
  */
 public class Personagem {
 
-    private Raca raca = new Humano();
+    private Raca raca;
     private static Personagem personagem;
+    private State estadoAtual;
 
     private Personagem() {
-        System.out.println("Logando Conta");
+        estadoAtual = StandartState();
+        raca = new Humano();
     }
 
     public void setClasse(Raca novaRaca) {
@@ -26,7 +28,7 @@ public class Personagem {
         return raca;
     }
 
-    public synchronized static Personagem getPersonagem() {
+    public static Personagem getPersonagem() {
         if (personagem == null) {
             personagem = new Personagem();
         }
@@ -35,6 +37,22 @@ public class Personagem {
 
     public void classe() {
         raca.classe();
+    }
+
+    private void setNewState(State novoEstado) {
+        this.estadoAtual = novoEstado;
+    }
+
+    public void entrarNoPantano() {
+        setNewState(new CriticalState());
+    }
+
+    public void mover() {
+        estadoAtual.mover(raca.velocidadeDeAtaque());
+    }
+
+    public void atacar() {
+        estadoAtual.atacar(raca.velocidaDeMovimentoBase());
     }
 
     public void Atributos() {
