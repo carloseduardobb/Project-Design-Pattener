@@ -10,7 +10,23 @@ package ProjectDesignPattern;
  * @author Carlos Eduardo
  */
 public class Mago implements RacaSelecionada {
-    public void Classe(){
+    @Override
+    public void classe(){
         System.out.println("Classe selecionada: Mago");
+    }
+
+    @Override
+    public void vidaBase() {
+        System.out.println("Vida Base: 90");
+    }
+
+    @Override
+    public void manaVase() {
+        System.out.println("Mana BaSE: 200");
+    }
+
+    @Override
+    public void velocidadeBase() {
+        System.out.println("Velocidade de Movimento Base: 325");
     }
 }

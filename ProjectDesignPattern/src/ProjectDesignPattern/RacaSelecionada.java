@@ -10,7 +10,10 @@ package ProjectDesignPattern;
  * @author Carlos Eduardo
  */
 public interface RacaSelecionada {
-    public void Classe();
+    public void classe();
+    public void vidaBase();
+    public void manaBase();
+    public void velocidadeMovimentoBase();
     
     
 }

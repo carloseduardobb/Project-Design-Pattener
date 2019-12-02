@@ -11,8 +11,23 @@ package ProjectDesignPattern;
  */
 public class Arqueiro implements RacaSelecionada {
     
-    public void Classe(){
+    public void classe(){
         System.out.println("Classe selecionada: Arqueiro");
+    }
+
+    @Override
+    public void vidaBase() {
+         System.out.println("Vida Base: 125");
+    }
+
+    @Override
+    public void manaBase() {
+        System.out.println("Mana Base: 100");
+    }
+
+    @Override
+    public void velocidadeMovimentoBase() {
+        System.out.println("Velocidade de Movimento Base: 310");
     }
     
 }

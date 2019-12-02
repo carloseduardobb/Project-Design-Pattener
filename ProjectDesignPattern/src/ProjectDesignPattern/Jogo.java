@@ -16,7 +16,16 @@ public class Jogo {
      */
     public static void main(String[] args) {
        
+        Personagem p = new Personagem();
         
+        RacaSelecionada r = new Mago();
+        
+        p.classe();
+        p.vidaBase();
+        p.manaBase();
+        p.velocidadeMovimentoBase();
+        p.setClasse(r);
+        p.classe();
         
     }
     

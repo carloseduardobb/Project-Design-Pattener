@@ -10,7 +10,22 @@ package ProjectDesignPattern;
  * @author Carlos Eduardo
  */
 public class Humano implements RacaSelecionada {
-    public void Classe(){
+    public void classe(){
         System.out.println("Raca Inicial Humano");
+    }
+
+    @Override
+    public void vidaBase() {
+           System.out.println("Vida Base: 50");
+    }
+
+    @Override
+    public void manaBase() {
+        System.out.println("Mana Base: 50");
+    }
+
+    @Override
+    public void velocidadeMovimentoBase() {
+        System.out.println("Velocidade de Movimento Base: 300");
     }
 }
