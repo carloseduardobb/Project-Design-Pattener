@@ -50,6 +50,10 @@ public class Personagem {
     public void entrarTerrenoNormal() {
         setNewState(new StandartState());
     }
+    
+    public void consumirPowerUp(){
+        setNewState(new GodState());
+    }
 
     public void mover() {
         estadoAtual.mover(raca.velocidadeDeAtaque());
@@ -60,10 +64,10 @@ public class Personagem {
     }
 
     public void Atributos() {
-        System.out.println(getRaca().vidaBase());
-        System.out.println(getRaca().manaBase());
-        System.out.println(getRaca().velocidadeDeAtaque());
-        System.out.println(getRaca().velocidaDeMovimentoBase());
+        System.out.println("Vida base:" +getRaca().vidaBase());
+        System.out.println("Mana base:" +getRaca().manaBase());
+        System.out.println("Velocidade de ataque base:" +getRaca().velocidadeDeAtaque());
+        System.out.println("Veocidade de movimento base:" +getRaca().velocidaDeMovimentoBase());
     }
 
 }
