@@ -43,8 +43,12 @@ public class Personagem {
         this.estadoAtual = novoEstado;
     }
 
-    public void entrarNoPantano() {
+    public void entrarTerrenoRuim() {
         setNewState(new CriticalState());
+    }
+
+    public void entrarTerrenoNormal() {
+        setNewState(new StandartState());
     }
 
     public void mover() {
