@@ -13,11 +13,11 @@ public class GodState implements State {
 
     @Override
     public void atacar(float velocidadeAtaque) {
-        System.out.println("Atacando na velocidade " + (velocidadeAtaque + 0.5));
+        System.out.println("Atacando na velocidade " + (velocidadeAtaque + 1));
     }
 
     @Override
     public void mover(float velocidadeMovimento) {
-        System.out.println("Movendo Super Rapido na velocidade "+ (velocidadeMovimento + 10));
+        System.out.println("Movendo Super Rapido na velocidade "+ (velocidadeMovimento + 50));
     } 
 }

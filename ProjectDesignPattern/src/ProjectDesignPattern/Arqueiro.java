@@ -30,7 +30,7 @@ public class Arqueiro implements Raca {
 
     @Override
     public float velocidaDeMovimentoBase() {
-        return 310;
+        return 350;
     }
     
 }

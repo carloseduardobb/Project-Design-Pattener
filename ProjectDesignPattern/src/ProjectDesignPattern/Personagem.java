@@ -44,23 +44,27 @@ public class Personagem {
     }
 
     public void entrarTerrenoRuim() {
+        System.out.println("Entrando no Terreno Ruim");
         setNewState(new CriticalState());
     }
 
     public void entrarTerrenoNormal() {
+        System.out.println("Entrando no Terreno Bom");
         setNewState(new StandartState());
     }
     
     public void consumirPowerUp(){
+        
+        System.out.println("Consumindo PowerUp");
         setNewState(new GodState());
     }
 
     public void mover() {
-        estadoAtual.mover(raca.velocidadeDeAtaque());
+        estadoAtual.mover(raca.velocidaDeMovimentoBase());
     }
 
     public void atacar() {
-        estadoAtual.atacar(raca.velocidaDeMovimentoBase());
+        estadoAtual.atacar(raca.velocidadeDeAtaque());
     }
 
     public void Atributos() {

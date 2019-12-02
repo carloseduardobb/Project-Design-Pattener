@@ -13,11 +13,11 @@ public class CriticalState implements State {
 
     @Override
     public void atacar(float velocidadeAtaque) {
-        System.out.println("Atacando na velocidade " + (velocidadeAtaque - 0.4));
+        System.out.println("Atacando na velocidade " + (velocidadeAtaque - 0.3));
     }
 
     @Override
     public void mover(float velocidadeMovimento) {
-        System.out.println("Movendo na velocidade "+ (velocidadeMovimento - 10));
+        System.out.println("Movendo na velocidade "+ (float)(velocidadeMovimento - 50));
     } 
 }

@@ -25,7 +25,7 @@ public class Mago implements Raca {
         return 200;
     }
      public float velocidadeDeAtaque(){
-        return (float) 0.5;
+        return (float) 0.7;
     }
 
     @Override

@@ -23,8 +23,9 @@ public class Humano implements Raca {
     public float manaBase() {
         return 50;
     }
+    @Override
     public float velocidadeDeAtaque(){
-        return 1;
+        return (float) 0.5;
     }
     @Override
     public float velocidaDeMovimentoBase() {
