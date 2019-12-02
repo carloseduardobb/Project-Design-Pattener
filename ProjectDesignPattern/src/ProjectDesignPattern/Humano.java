@@ -15,8 +15,8 @@ public class Humano implements RacaSelecionada {
     }
 
     @Override
-    public void vidaBase() {
-           System.out.println("Vida Base: 50");
+    public float vidaBase() {
+        return 50;
     }
 
     @Override
@@ -25,7 +25,7 @@ public class Humano implements RacaSelecionada {
     }
 
     @Override
-    public void velocidadeMovimentoBase() {
+    public void velocidaDeMovimentoBase() {
         System.out.println("Velocidade de Movimento Base: 300");
     }
 }

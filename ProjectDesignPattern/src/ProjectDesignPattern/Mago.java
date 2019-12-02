@@ -16,8 +16,8 @@ public class Mago implements RacaSelecionada {
     }
 
     @Override
-    public void vidaBase() {
-        System.out.println("Vida Base: 90");
+    public float vidaBase() {
+        return 100;
     }
 
     @Override
@@ -26,7 +26,7 @@ public class Mago implements RacaSelecionada {
     }
 
     @Override
-    public void velocidadeMovimentoBase() {
+    public void velocidaDeMovimentoBase() {
         System.out.println("Velocidade de Movimento Base: 325");
     }
 }

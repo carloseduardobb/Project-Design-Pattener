@@ -11,9 +11,9 @@ package ProjectDesignPattern;
  */
 public interface RacaSelecionada {
     public void classe();
-    public void vidaBase();
+    public float vidaBase();
     public void manaBase();
-    public void velocidadeMovimentoBase();
+    public void velocidaDeMovimentoBase();
     
     
 }

@@ -21,9 +21,9 @@ public class Jogo {
         RacaSelecionada r = new Mago();
         
         p.classe();
-        p.vidaBase();
-        p.manaBase();
-        p.velocidadeMovimentoBase();
+        p.getRaca().vidaBase();
+        p.getRaca().manaBase();
+        p.getRaca().velocidaDeMovimentoBase();
         p.setClasse(r);
         p.classe();
         
