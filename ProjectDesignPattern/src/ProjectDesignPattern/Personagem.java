@@ -11,4 +11,14 @@ package ProjectDesignPattern;
  */
 public class Personagem {
     
+    private RacaSelecionada raca = new Humano();
+    
+    public void setClasse(RacaSelecionada novaRaca ){
+        this.raca = novaRaca;
+    }
+    
+    public void Classe(){
+        raca.Classe();
+    }
+    
 }
