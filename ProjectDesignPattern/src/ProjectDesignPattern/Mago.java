@@ -9,7 +9,7 @@ package ProjectDesignPattern;
  *
  * @author Carlos Eduardo
  */
-public class Mago implements RacaSelecionada {
+public class Mago implements Raca {
     @Override
     public void classe(){
         System.out.println("Classe selecionada: Mago");

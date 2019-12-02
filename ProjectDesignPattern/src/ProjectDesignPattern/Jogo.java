@@ -16,19 +16,19 @@ public class Jogo {
      */
     public static void main(String[] args) {
        
-        Personagem p = new Personagem();
+        Personagem personagem = Personagem.getPersonagem();
         
-        RacaSelecionada r = new Mago();
-        RacaSelecionada r1 = new Guerreiro();
+        Raca mago = new Mago();
+        Raca guerreiro = new Guerreiro();
         
-        p.classe();
-        p.Atributos();
-        p.setClasse(r);
-        p.classe();
-        p.Atributos();
-        p.setClasse(r1);
-        p.classe();
-        p.Atributos();
+        personagem.classe();
+        personagem.Atributos();
+        personagem.setClasse(mago);
+        personagem.classe();
+        personagem.Atributos();
+        personagem.setClasse(guerreiro);
+        personagem.classe();
+        personagem.Atributos();
         
     }
     

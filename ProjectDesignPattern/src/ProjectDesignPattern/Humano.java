@@ -9,7 +9,7 @@ package ProjectDesignPattern;
  *
  * @author Carlos Eduardo
  */
-public class Humano implements RacaSelecionada {
+public class Humano implements Raca {
     public void classe(){
         System.out.println("Raca Inicial Humano");
     }

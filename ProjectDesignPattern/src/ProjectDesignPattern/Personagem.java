@@ -10,45 +10,38 @@ package ProjectDesignPattern;
  * @author Carlos Eduardo
  */
 public class Personagem {
-    
-    private RacaSelecionada raca = new Humano();
-    private static Personagem logar;
-    
-    Personagem(){
+
+    private Raca raca = new Humano();
+    private static Personagem personagem;
+
+    private Personagem() {
         System.out.println("Logando Conta");
     }
-    
-    public void setClasse(RacaSelecionada novaRaca ){
+
+    public void setClasse(Raca novaRaca) {
         this.raca = novaRaca;
     }
-    
-   
-     
-    public RacaSelecionada getRaca(){
+
+    public Raca getRaca() {
         return raca;
     }
-    
-    
-    
-    public synchronized static Personagem getLogar() {
-        if (logar == null) {
-            logar = new Personagem();
+
+    public synchronized static Personagem getPersonagem() {
+        if (personagem == null) {
+            personagem = new Personagem();
         }
-        return logar;
+        return personagem;
     }
-    
-    public void classe(){
+
+    public void classe() {
         raca.classe();
     }
-    
-    public void Atributos(){
+
+    public void Atributos() {
         System.out.println(getRaca().vidaBase());
         System.out.println(getRaca().manaBase());
         System.out.println(getRaca().velocidadeDeAtaque());
         System.out.println(getRaca().velocidaDeMovimentoBase());
     }
-    
-    
-    
-    
+
 }

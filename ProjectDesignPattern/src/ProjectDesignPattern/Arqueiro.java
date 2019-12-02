@@ -9,7 +9,7 @@ package ProjectDesignPattern;
  *
  * @author Carlos Eduardo
  */
-public class Arqueiro implements RacaSelecionada {
+public class Arqueiro implements Raca {
     
     public void classe(){
         System.out.println("Classe selecionada: Arqueiro");

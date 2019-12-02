@@ -9,7 +9,7 @@ package ProjectDesignPattern;
  *
  * @author Carlos Eduardo
  */
-public interface RacaSelecionada {
+public interface Raca {
     public void classe();
     public float vidaBase();
     public float manaBase();

@@ -16,7 +16,7 @@ public class Logar {
         System.out.println("Logando Conta");
     }
     
-    public synchronized static Logar getLogar() {
+    public static Logar getLogar() {
         if (logar == null) {
             logar = new Logar();
         }
