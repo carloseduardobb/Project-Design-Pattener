@@ -9,6 +9,15 @@ package ProjectDesignPattern;
  *
  * @author edson
  */
-public class StandartState {
-    
+public class StandartState implements State {
+
+    @Override
+    public void atacar(float velocidadeAtaque) {
+        System.out.println("Atacando na velocidade " + velocidadeAtaque);
+    }
+
+    @Override
+    public void mover(float velocidadeMovimento) {
+        System.out.println("Movendo na velocidade " + velocidadeMovimento);
+    }
 }

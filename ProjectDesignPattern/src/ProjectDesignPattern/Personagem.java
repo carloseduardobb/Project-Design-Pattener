@@ -16,7 +16,7 @@ public class Personagem {
     private State estadoAtual;
 
     private Personagem() {
-        estadoAtual = StandartState();
+        estadoAtual = new StandartState();
         raca = new Humano();
     }
 
