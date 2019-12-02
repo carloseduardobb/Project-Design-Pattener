@@ -19,13 +19,16 @@ public class Jogo {
         Personagem p = new Personagem();
         
         RacaSelecionada r = new Mago();
+        RacaSelecionada r1 = new Guerreiro();
         
         p.classe();
-        p.getRaca().vidaBase();
-        p.getRaca().manaBase();
-        p.getRaca().velocidaDeMovimentoBase();
+        p.Atributos();
         p.setClasse(r);
         p.classe();
+        p.Atributos();
+        p.setClasse(r1);
+        p.classe();
+        p.Atributos();
         
     }
     

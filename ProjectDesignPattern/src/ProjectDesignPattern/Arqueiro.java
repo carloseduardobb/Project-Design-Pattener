@@ -21,13 +21,16 @@ public class Arqueiro implements RacaSelecionada {
     }
 
     @Override
-    public void manaBase() {
-        System.out.println("Mana Base: 100");
+    public float manaBase() {
+        return 100;
+    }
+     public float velocidadeDeAtaque(){
+        return  2;
     }
 
     @Override
-    public void velocidaDeMovimentoBase() {
-        System.out.println("Velocidade de Movimento Base: 310");
+    public float velocidaDeMovimentoBase() {
+        return 310;
     }
     
 }

@@ -20,12 +20,14 @@ public class Humano implements RacaSelecionada {
     }
 
     @Override
-    public void manaBase() {
-        System.out.println("Mana Base: 50");
+    public float manaBase() {
+        return 50;
     }
-
+    public float velocidadeDeAtaque(){
+        return 1;
+    }
     @Override
-    public void velocidaDeMovimentoBase() {
-        System.out.println("Velocidade de Movimento Base: 300");
+    public float velocidaDeMovimentoBase() {
+        return 300;
     }
 }

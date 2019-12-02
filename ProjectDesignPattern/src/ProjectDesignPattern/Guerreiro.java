@@ -21,12 +21,15 @@ public class Guerreiro implements RacaSelecionada{
     }
 
     @Override
-    public void manaBase() {
-         System.out.println("Mana Base: 75");
+    public float manaBase() {
+         return 75;
+    }
+    public float velocidadeDeAtaque(){
+        return (float) 1.5;
     }
 
     @Override
-    public void velocidaDeMovimentoBase() {
-        System.out.println("Velocidade de Movimento Base: 345");
+    public float velocidaDeMovimentoBase() {
+        return 345;
     }
 }

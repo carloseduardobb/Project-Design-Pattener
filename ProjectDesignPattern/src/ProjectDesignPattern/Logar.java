@@ -10,5 +10,17 @@ package ProjectDesignPattern;
  * @author Carlos Eduardo
  */
 public class Logar {
+    private static Logar logar;
+    
+    private Logar(){
+        System.out.println("Logando Conta");
+    }
+    
+    public synchronized static Logar getLogar() {
+        if (logar == null) {
+            logar = new Logar();
+        }
+        return logar;
+    }
     
 }
