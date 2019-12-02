@@ -21,12 +21,12 @@ public class Mago implements RacaSelecionada {
     }
 
     @Override
-    public void manaVase() {
+    public void manaBase() {
         System.out.println("Mana BaSE: 200");
     }
 
     @Override
-    public void velocidadeBase() {
+    public void velocidadeMovimentoBase() {
         System.out.println("Velocidade de Movimento Base: 325");
     }
 }
