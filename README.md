@@ -14,3 +14,4 @@ Explicação dos Patterns escolhidos para o uso
 2 escolhemos o strategy para definir qual classe estaria em execução no exato momento utilizamos ele pois o personagem pode alterar de classe a qualquer momento durante o jogo
 
 3 utilizamos por último o state por causa que o personagem pode ter suas ações alteradas dependendo do estado em que ele se encontra por exemplo quando o personagem consome um power up as ações dele muda.
+
